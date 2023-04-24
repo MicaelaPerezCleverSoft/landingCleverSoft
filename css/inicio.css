@@ -1,0 +1,48 @@
+.inicio {
+    background-image: url('../imagenes/InicioBackground.png');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+
+}
+
+.inicio img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.botonesInicio{
+    position: absolute;
+    top: 75%;
+
+
+
+    padding: 0 15rem;
+}
+
+.botonSoluciones{
+    background-color: #21B5D2;
+    color: #fff;
+
+    width: 11rem;
+    height: 3rem;
+    border-color: transparent;
+    border-radius: 1rem;
+}
+
+.botonNosotros{
+    background-color: #295883;
+    color: #fff;
+    
+    width: 11rem;
+    height: 3rem;
+    border-color: transparent;
+    border-radius: 1rem;
+}

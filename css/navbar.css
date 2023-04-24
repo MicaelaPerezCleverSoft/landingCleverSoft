@@ -1,0 +1,30 @@
+*{
+    margin: 0rem;
+    padding: 0;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #2C2C2C;
+    color: white;
+
+    font-size: 0.8rem;
+    font-weight: 800;
+    padding: 0.5rem;
+}
+
+.navbarList {
+    display: flex;
+    flex-direction: row;
+
+    list-style: none !important;
+}
+
+.navbarList li {
+    margin: 0rem 0.8rem;
+    cursor: pointer;
+}

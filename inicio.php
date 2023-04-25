@@ -18,8 +18,8 @@ class Inicio
             <div class="inicio">
                 <img src="' . $this->logo . '"></img>
                 <div class="botonesInicio">
-                    <button class="botonSoluciones">' . $this->botonUno . '</button>
-                    <button class="botonNosotros">' . $this->botonDos . '</button>
+                    <button class="botonUno">' . $this->botonUno . '</button>
+                    <button class="botonDos">' . $this->botonDos . '</button>
                 </div>
             </div>
         ';

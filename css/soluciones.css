@@ -28,7 +28,6 @@
 
 .dataSoluciones img {
     width: 3rem;
-
 }
 
 .dataSoluciones h2 {
@@ -82,8 +81,8 @@
 }
 
 .soluciones {
-    width: 30%;
-    margin-right: 0.5rem;
+    width: 35%;
+
 }
 
 .soluciones:last-child {

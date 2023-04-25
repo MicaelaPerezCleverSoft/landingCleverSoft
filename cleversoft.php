@@ -29,14 +29,14 @@
     echo '<h1 class="titulo">SOLUCIONES</h1>';
     require('soluciones.php');
     echo '<div class="fila-superior">';
-    $soluciones = new Soluciones('./imagenes/CleverERP.png', './imagenes/LogoCleverSoft.png', 'CleverERP', 'Gestion Corporativa Institucional', 'Conoce Mas', '37rem');
-    $soluciones = new Soluciones('./imagenes/CleverCLUB.png', './imagenes/LogoCleverSoft.png', 'CleverCLUB', 'Gestión de Clubes Sociales y Deportivos', 'Conoce Mas', '37rem');
+    $soluciones = new Soluciones('./imagenes/CleverERP.png', './imagenes/LogoCleverSoft.png', 'CleverERP', 'Gestion Corporativa Institucional', 'Conoce Mas', '35rem', '18rem');
+    $soluciones = new Soluciones('./imagenes/CleverCLUB.png', './imagenes/LogoCleverSoft.png', 'CleverCLUB', 'Gestión de Clubes Sociales y Deportivos', 'Conoce Mas', '35rem', '18rem');
     echo '</div>';
 
     echo '<div class="fila-inferior">';
-    $soluciones = new Soluciones('./imagenes/CleverSCA.png', './imagenes/LogoCleverSoft.png', 'CleverSCA', 'Gestion Corporativa Institucional', 'Conoce Mas', '24rem');
-    $soluciones = new Soluciones('./imagenes/CleverCRM.png', './imagenes/LogoCleverSoft.png',  'CleverCRM', 'Relaciones con los Clientes', 'Conoce Mas', '24rem');
-    $soluciones = new Soluciones('./imagenes/VerTodos.png', './imagenes/LogoCleverSoft.png', '', '', 'Ver todo', '24rem');
+    $soluciones = new Soluciones('./imagenes/CleverSCA.png', './imagenes/LogoCleverSoft.png', 'CleverSCA', 'Gestion Corporativa Institucional', 'Conoce Mas', '22.7rem', '14rem');
+    $soluciones = new Soluciones('./imagenes/CleverCRM.png', './imagenes/LogoCleverSoft.png',  'CleverCRM', 'Relaciones con los Clientes', 'Conoce Mas', '22.7rem', '14rem');
+    $soluciones = new Soluciones('./imagenes/VerTodos.png', './imagenes/LogoCleverSoft.png', '', '', 'Ver todo', '22.7rem', '14rem');
     echo '</div>';
     echo '</div>';    
 

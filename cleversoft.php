@@ -15,9 +15,14 @@
 <body>
   <header>
     <?php
-    // Incluye el archivo header.php
+
     require('header.php');
+    $menuOptions = array('INICIO', 'SOLUCIONES', 'NOSOTROS', 'SERVICIOS', 'PORTFOLIO', 'PARTNERS', 'CONTACTO', 'ACCESO CLIENTES', 'AYUDA');
+    $navbar = new Navbar($menuOptions);
+
     require('inicio.php');
+    $inicio = new Inicio('./imagenes/LogoCleverCompleto.png', 'SOLUCIONES', 'NOSOTROS');
+    
     ?>
   </header>
 </body>

@@ -1,16 +1,23 @@
-<link rel="stylesheet" type="text/css" href="./css/navbar.css">
+<?php
 
-<div class="navbar">
-    <img src="./imagenes/LogoCleverSoft.png" width="40" height="40"></img>
-    <ul class="navbarList">
-        <li><a>INICIO</a></li>
-        <li><a>SOLUCIONES</a></li>
-        <li><a>NOSOTROS</a></li>
-        <li><a>SERVICIOS</a></li>
-        <li><a>PORTFOLIO</a></li>
-        <li><a>PARTNERS</a></li>
-        <li><a>CONTACTO</a></li>
-        <li><a>ACCESO CLIENTES</a></li>
-        <li><a>AYUDA</a></li>
-    </ul>
-</div>
+class Navbar
+{
+
+    private $options;
+
+    public function __construct($options)
+    {
+        $this->options = $options;
+        echo '<link rel="stylesheet" type="text/css" href="./css/navbar.css">';
+        echo '<div class="navbar">';
+        echo '<img src="./imagenes/LogoCleverSoft.png" width="40" height="40"></img>';
+        echo '<ul class="navbarList">';
+        foreach ($this->options as $option) {
+            echo '<li><a>' . $option . '</a></li>';
+        }
+        echo '</ul>';
+        echo '</div>';
+    }
+}
+
+?>

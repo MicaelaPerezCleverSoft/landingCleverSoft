@@ -1,5 +1,16 @@
-.dataSoluciones{
-    background-size:cover;
+.titulo {
+    text-align: left;
+    margin-right: 66.5rem;
+    color: #ffffff;
+    padding: 1rem;
+
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+
+.dataSoluciones {
+    background-size: cover;
 
     display: flex;
     flex-direction: column;
@@ -7,35 +18,72 @@
     align-items: center;
 
     color: #FFFFFF;
+    border-radius: 0.3rem;
+    margin: 0 1rem;
+
+    position: relative;
 }
 
-.dataSoluciones img{
-    width: 2rem;
+
+
+.dataSoluciones img {
+    width: 3rem;
+
 }
 
-/*---------------------------------------------------------------------------------------------------------------*/
+.dataSoluciones h2 {
+    font-size: 1rem;
+}
+
+.dataSoluciones p {
+    font-size: 0.8rem;
+}
+
+.dataSoluciones h2,
+.dataSoluciones p {
+    padding: 0 0 0.5rem 0;
+}
+
+.dataSoluciones button {
+    width: 7rem;
+    height: 2rem;
+    background: linear-gradient(to right, #295883, #152E45, #295883);
+    color: white;
+
+    border-radius: 1rem;
+    border: none;
+
+    font-weight: bold;
+
+    margin: 0.5rem 0 0 0;
+    cursor: pointer;
+}
+
 .contenedor-soluciones {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    background-color: #212529;
 }
 
 .fila-superior {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
+
 }
 
 .fila-inferior {
     display: flex;
     width: 100%;
     margin-top: 20px;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .soluciones {
     width: 30%;
-    margin-right: 20px;
+    margin-right: 0.5rem;
 }
 
 .soluciones:last-child {

@@ -9,7 +9,11 @@
 }
 
 .inicio img {
+    max-width: 100%;
     position: absolute;
+
+
+    opacity: 0.8;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -19,28 +23,25 @@
 .botonesInicio{
     position: absolute;
     top: 75%;
-
-
-
     padding: 0 15rem;
 }
 
 .botonUno{
-    background-color: #21B5D2;
+    background-color: #295883;
     color: #fff;
 
     width: 11rem;
     height: 3rem;
     border-color: transparent;
-    border-radius: 1rem;
+    border-radius: 0.3rem;
 }
 
 .botonDos{
-    background-color: #295883;
+    background-color: #21B5D2;
     color: #fff;
     
     width: 11rem;
     height: 3rem;
     border-color: transparent;
-    border-radius: 1rem;
+    border-radius: 0.3rem;
 }

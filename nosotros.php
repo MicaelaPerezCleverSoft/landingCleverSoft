@@ -1,4 +1,4 @@
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.0.0/font/bootstrap-icons.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="./css/nosotros.css">
 
 <?php
@@ -31,9 +31,9 @@ class Nosotros
             </div>
             <div class="nosotrosPoliticaDeCalidad">
             <ul>
-                <li><i class="material-icons icono">trending_up</i><strong>PROPÓSITO</strong> <br> <p>' . $this->proposito . ' </p></li>
-                <li><i class="material-icons icono">remove_red_eye</i><strong>MISIÓN</strong> <br><p>' . $this->mision . '</p></li>
-                <li><i class="material-icons icono">card_giftcard</i><strong>VISIÓN</strong>  <br><p>' . $this->vision . '</p></li>
+                <li><i class="bi bi-rocket-takeoff icono"></i><strong>PROPÓSITO</strong> <br> <p>' . $this->proposito . ' </p></li>
+                <li><i class="bi bi-eye icono"></i><strong>MISIÓN</strong> <br><p>' . $this->mision . '</p></li>
+                <li><i class="bi bi-gift icono"></i></i><strong>VISIÓN</strong>  <br><p>' . $this->vision . '</p></li>
             </ul>
             </div>
         </section>

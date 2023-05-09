@@ -1,11 +1,21 @@
 .inicio {
-    background-image: url('../imagenes/InicioBackground.png');
+    background: url('../imagenes/InicioBackgroundTres.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    animation: cambiarImagen 20s infinite;
+}
+
+@keyframes cambiarImagen {
+    0%, 50% {
+        background-image: url('../imagenes/InicioBackgroundTres.jpg');
+    }
+    52%, 100% {
+        background-image: url('../imagenes/InicioBackground.png');
+    }
 }
 
 .inicio img {
@@ -13,35 +23,47 @@
     position: absolute;
 
 
-    opacity: 0.8;
+    opacity: 0.9;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -70%);
     z-index: 1;
 }
 
-.botonesInicio{
-    position: absolute;
-    top: 75%;
-    padding: 0 15rem;
+.botonesInicio {
+    display: flex;
+    justify-content: space-around;
+    padding: 22rem 15rem 0 15rem;
 }
 
-.botonUno{
+.botonUno {
     background-color: #295883;
     color: #fff;
 
     width: 11rem;
     height: 3rem;
+
+    font-weight: 700;
     border-color: transparent;
     border-radius: 0.3rem;
+
+    margin-right: 0.7rem;
+
+    cursor: pointer;
 }
 
-.botonDos{
+.botonDos {
     background-color: #21B5D2;
     color: #fff;
-    
+
     width: 11rem;
     height: 3rem;
+
+    font-weight: 700;
     border-color: transparent;
     border-radius: 0.3rem;
+
+    margin-left: 0.7rem;
+
+    cursor: pointer;
 }

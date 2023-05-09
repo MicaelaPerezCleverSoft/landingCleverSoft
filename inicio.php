@@ -11,7 +11,7 @@ class Inicio
         $this->logo = $logo;
         $this->botonUno = $botonUno;
         $this->botonDos = $botonDos;
-        
+
         echo '
             <link rel="stylesheet" type="text/css" href="./css/inicio.css">
     

@@ -16,9 +16,9 @@
     font-weight: 800;
     padding: 0.5rem;
     
-    position: fixed; /* Agrega esta propiedad */
-    top: 0; /* Agrega esta propiedad */
-    width: 100%; /* Ancho completo */
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
 
     z-index: 500;
 }

@@ -1,5 +1,4 @@
-
-.titulo {
+.tituloCards {
     text-align: left;
     margin-right: 66.5rem;
     color: #ffffff;
@@ -9,40 +8,48 @@
     font-weight: 800;
 }
 
+.wrapperCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-.dataSoluciones {
-    background-size: cover;
+    z-index: 10000;
+}
+
+.cards {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #FFFFFF;
-  
+    border: 2px solid;
+    border-color: rgb(172, 172, 172);
     border-radius: 0.3rem;
-  
-    margin: 0 0.5rem;
+    margin: 0 0.6rem;
     position: relative;
+    background-size: cover;
 }
 
-
-.dataSoluciones img {
+.cards img {
     width: 3rem;
-}
-
-.dataSoluciones h2 {
-    font-size: 1rem;
-}
-
-.dataSoluciones p {
-    font-size: 0.8rem;
-}
-
-.dataSoluciones h2,
-.dataSoluciones p {
     padding: 0 0 0.5rem 0;
 }
 
-.dataSoluciones button {
+.cards h2 {
+    font-size: 1rem;
+}
+
+.cards p {
+    font-size: 0.8rem;
+}
+
+.cards h2,
+.cards p {
+    padding: 0 0 0.5rem 0;
+}
+
+.cards button {
     width: 7rem;
     height: 2rem;
     background: linear-gradient(to right, #295883, #152E45, #295883);
@@ -57,15 +64,9 @@
     cursor: pointer;
 }
 
-.contenedor-soluciones {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
+.contenedor-cards {
     background-color: #212529;
-
     padding-bottom: 2rem;
-
 }
 
 .fila-superior {

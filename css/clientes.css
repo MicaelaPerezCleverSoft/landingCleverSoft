@@ -1,0 +1,58 @@
+.clientesFooter{
+    background-image: url("../imagenes/BackgroundFooter.png");
+    background-size: cover;
+    background-position: bottom;
+}
+
+.titulo {
+    color: white;
+    text-align: center;
+    position: relative;
+    font-size: 2rem;
+    line-height: 1.2;
+    padding: 1.5rem 0 1rem 0;
+}
+
+.highlight {
+    background-color: #375964;
+    padding: 0.1rem 0.5rem;
+}
+
+.subtitulo {
+    color: white;
+    font-size: 1rem;
+    margin: 1rem 2.5rem;
+}
+
+.slider-container{
+    background-image: url(../imagenes/BackgroundCarrousel.png) !important;
+    background-size: cover;
+    padding: 1rem 0 !important;
+    border-radius: 0.5rem;
+}
+
+.partners{
+    padding: 1rem 0;
+}
+
+.carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 0 1rem 0;
+}
+
+.horizontal-list {
+    display: flex;
+    align-items: center;
+}
+
+.horizontal-list li {
+    list-style-type: none;
+    margin: 0 10px;
+}
+
+.horizontal-list li img {
+    max-width: 110px;
+    height: auto;
+}

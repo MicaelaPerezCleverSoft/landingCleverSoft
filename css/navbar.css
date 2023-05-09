@@ -37,3 +37,8 @@
     margin: 0rem 0.8rem;
     cursor: pointer;
 }
+
+.active, 
+.active:hover{
+    color: #18ACCA;
+}

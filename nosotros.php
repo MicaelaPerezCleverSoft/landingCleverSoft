@@ -21,7 +21,7 @@ class Nosotros
         $this->vision = $vision;
 
         echo '
-        <section class="nosotros">
+        <section class="nosotros" id="nosotros">
             <div class="nosotrosInfo">
                 <h3>' . $this->subtitulo . '</h3>
                 <h2>

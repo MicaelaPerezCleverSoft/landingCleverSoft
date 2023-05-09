@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" style="scroll-behavior: smooth;">
 
 <head>
   <meta charset="UTF-8">
@@ -21,15 +21,16 @@
 
     require('navbar.php');
     $menuOptions = array('INICIO', 'SOLUCIONES', 'NOSOTROS', 'SERVICIOS', 'PORTFOLIO', 'PARTNERS', 'CONTACTO', 'ACCESO CLIENTES', 'AYUDA');
-    $navbar = new Navbar($menuOptions);
+    $menuUrls = array('#', '#soluciones', '#nosotros', '#servicios', '#portfolio', '#partners', '#contacto', 'https://clients.cleversoftsolutions.com/login.php', '#');
+    $navbar = new Navbar($menuOptions, $menuUrls);
 
+    echo '<section id="inicio">';
     require('inicio.php');
     $inicio = new Inicio('./imagenes/Logo.png', 'SOLUCIONES', 'NOSOTROS');
+    echo '</section>';
 
-    /*require('soluciones.php');*/
-
+    echo '<section class="contenedor-cards" id="soluciones">';
     require('cards.php');
-     echo '<div class="contenedor-cards">';
     echo '<h1 class="tituloCards">SOLUCIONES</h1>';
 
     echo '<div class="wrapperCards">';
@@ -44,13 +45,13 @@
     $soluciones = new Cards('./imagenes/Soluciones/Card5.png', './imagenes/LogoCleverSoft.png', '', '', 'Ver todo', '24rem', '14.5rem');
     echo '</div>';
     echo '</div>';
-    echo '</div>';
+    echo '</section>';
 
-    
+
     require('nosotros.php');
     $nosotros = new Nosotros(' Quiénes somos', 'NUESTRA HISTORIA', 'Desde 1986 Clever Soft S.A. se ha especializado en brindar soluciones informáticas a las empresas, buscando de forma constante optimizar los tiempos de las tareas que hacen a la gestión del negocio. <br><br>Nuestros productos son de fácil adaptabilidad a cualquier tipo de necesidad del negocio. <br><br>El staff de profesionales que integran Clever Soft S.A. posee los conocimientos y cuenta con la tecnología para enfrentar los requerimientos más rigurosos del mercado actual.', 'Ser líderes en el mercado empresarial, aplicando inteligencia al desarrollo, ofreciendo confianza y responsabilidad de los proyectos, trascendiendo y disfrutando en cada paso.', 'Desarrollar y potenciar el mejor software de gestión empresarial del mercado, simple, eficiente y flexible. Ofreciendo instalaciones Cloud, In-Company e Híbridas. Proveer soluciones compitiendo con los mejores del sector.', 'Brindar a nuestros clientes herramientas que facilite y complemente el desarrollo de sus operaciones, acercándoles soluciones innovadoras, prácticas y confiables para su constante evolución.');
-    
-    echo '<div class="contenedor-cards">';
+
+    echo '<section class="contenedor-cards" id="servicios">';
     echo '<h1 class="tituloCards">SERVICIOS</h1>';
     echo '<div class="fila-superior">';
     $soluciones = new Cards('./imagenes/Consultoria.jpg', './imagenes/LogoCleverSoft.png', 'Consultoría de Sistemas', '', 'Conoce Más', '38rem', '21rem',  '', '');
@@ -61,11 +62,49 @@
     $soluciones = new Cards('./imagenes/Desarrollo.jpg', './imagenes/LogoCleverSoft.png',  'Desarrollo de Aplicaciones a Medida', '', 'Conoce Más', '25rem', '14rem',  '', '');
     $soluciones = new Cards('./imagenes/Implementacion.jpg', './imagenes/LogoCleverSoft.png', 'Capacitación en Tecnologías de Información', '', 'Conoce Más', '25rem', '14rem',  '', '');
     echo '</div>';
-    echo '</div>';
+    echo '</section>';
 
+    echo '<section id="portfolio">';
     require('clientes.php');
+    echo '</section>';
+    echo '<section id="partners">';
+    echo '</section>';
+    echo '<section id="contacto">';
+    echo '</section>';
     ?>
   </header>
+
+
+
 </body>
 
 </html>
+
+<script>
+  const sections = document.querySelectorAll('section');
+
+  /* devuelve el índice de la sección correspondiente a la posición actual del desplazamiento */
+  const getCurrentSectionIndex = () => {
+    let index = 0;
+    const offset = window.pageYOffset + window.innerHeight / 2;
+    sections.forEach((section, i) => {
+      if (offset > section.offsetTop) {
+        index = i;
+      }
+    });
+    return index;
+  };
+
+  /* actualiza la clase 'active' en los elementos del menú de navegación */
+  const updateActiveClass = () => {
+    const index = getCurrentSectionIndex();
+    document.querySelectorAll('.navbarList a').forEach(link => {
+      link.classList.remove('active');
+    });
+    document.querySelectorAll('.navbarList a')[index].classList.add('active');
+  };
+
+  /* actualiza la clase cada vez que se produce el evento 'scroll' */
+  window.addEventListener('scroll', updateActiveClass);
+  window.addEventListener('resize', updateActiveClass);
+</script>

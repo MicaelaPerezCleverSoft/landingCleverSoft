@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/*HEADER*/
+
+.titulares {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    z-index: 1;
+
+    color: white;
+}
+
+.titulares h2 {
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 2rem 0 2rem 3rem;
+}
+
+.titulares h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    padding: 0 0 0 3rem;
+}
+
+.titulares p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    padding: 2rem 0 2rem 3rem;
+}
+
+#video-container {
+    width: 100%;
+    height: 50%;
+    z-index: -100;
+}
+
+#video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+/*BODY*/
+
+.frase {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 1.5rem 0 1.5rem 3rem;
+}
+
+.descripcion {
+    display: flex;
+    padding: 0 3rem 1.5rem 3rem;
+}
+
+.descripcion p {
+    padding-right: 7rem;
+    font-size: 1.07rem;
+    line-height: 1.5;
+}
+
+.ayuda {
+    background-image: url(../imagenes/Soluciones/BackgroundSolucionesAyuda.jpg);
+    color: white;
+
+    padding: 3rem;
+    color: #2C2C2C;
+}
+
+.descripcionAyudaCorta {
+    color: white;
+    padding-bottom: 2rem;
+    width: 67%;
+}
+
+.ayuda h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 3rem;
+    height: auto;
+    width: 100%;
+}
+
+.cardAyuda {
+    background-color: #f7f7f7;
+    padding: 1em;
+    position: relative;
+
+    border: 2px solid gray;
+}
+
+.cardAyuda::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    border-top: 7px solid #21B5D2;
+    border-right: 7px solid #21B5D2;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.descripcionAyudaTitulo {
+    font-weight: 900;
+    font-size: 1.4rem;
+    line-height: 1.2;
+   
+}
+
+.descripcionAyuda {
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
+}

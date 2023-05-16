@@ -29,21 +29,58 @@
     $inicio = new Inicio('./imagenes/Logo.png', 'SOLUCIONES', 'NOSOTROS');
     echo '</section>';
 
-    echo '<section class="contenedor-cards" id="soluciones">';
     require('cards.php');
+
+    echo '<section class="contenedor-cards" id="soluciones">';
     echo '<h1 class="tituloCards">SOLUCIONES</h1>';
 
     echo '<div class="wrapperCards">';
     echo '<div class="fila-superior">';
-    $soluciones = new Cards('./imagenes/Soluciones/Card1.png', './imagenes/LogoCleverSoft.png', 'CleverERP', 'Gestion Corporativa Institucional', 'Conoce Más', '37.5rem', '19rem');
-    $soluciones = new Cards('./imagenes/Soluciones/Card2.png', './imagenes/LogoCleverSoft.png', 'CleverCLUB', 'Gestión de Clubes Sociales y Deportivos', 'Conoce Más', '37rem', '19rem');
+    $soluciones = new Cards('./imagenes/Soluciones/Card1.png', './imagenes/LogoCleverSoft.png', 'CleverERP', 'Gestion Corporativa Institucional', 'Conoce Más', '37.5rem', '19rem', '/landingCleversoft/soluciones/soluciones.php', 'ERP');
+    echo '
+    <div class="cards" style="background-image: url(' . $soluciones->getImagen() . '); width:' . $soluciones->getWidth() . '; height:' . $soluciones->getHeight() . '">
+        <img src="' . $soluciones->getLogo() . '"></img>    
+        <h2>' . $soluciones->getTitulo() . '</h2>
+        <p>' . $soluciones->getSubtitulo() . '</p>
+        <a href="' . $soluciones->getEnlace() . '?tarjeta=' . $soluciones->getIdentificador() . '"><button class="botonSoluciones">' . $soluciones->getBoton() . '</button></a>
+    </div>';
+    $soluciones2 = new Cards('./imagenes/Soluciones/Card2.png', './imagenes/LogoCleverSoft.png', 'CleverCLUB', 'Gestión de Clubes Sociales y Deportivos', 'Conoce Más', '37rem', '19rem', '/landingCleversoft/soluciones/soluciones.php', 'CLUB');
+    echo '
+    <div class="cards" style="background-image: url(' . $soluciones2->getImagen() . '); width:' . $soluciones2->getWidth() . '; height:' . $soluciones2->getHeight() . '">
+        <img src="' . $soluciones2->getLogo() . '"></img>    
+        <h2>' . $soluciones2->getTitulo() . '</h2>
+        <p>' . $soluciones2->getSubtitulo() . '</p>
+        <a href="' . $soluciones2->getEnlace() . '?tarjeta=' . $soluciones2->getIdentificador() . '"><button class="botonSoluciones">' . $soluciones2->getBoton() . '</button></a>
+    </div>';
     echo '</div>';
 
     echo '<div class="fila-inferior">';
-    $soluciones = new Cards('./imagenes/Soluciones/Card3.png', './imagenes/LogoCleverSoft.png', 'CleverSCA', 'Gestion Corporativa Institucional', 'Conoce Más', '25rem', '14.5rem');
-    $soluciones = new Cards('./imagenes/Soluciones/Card4.png', './imagenes/LogoCleverSoft.png',  'CleverCRM', 'Relaciones con los Clientes', 'Conoce Más', '24rem', '14.5rem');
-    $soluciones = new Cards('./imagenes/Soluciones/Card5.png', './imagenes/LogoCleverSoft.png', '', '', 'Ver todo', '24rem', '14.5rem');
+    $soluciones3 = new Cards('./imagenes/Soluciones/Card3.png', './imagenes/LogoCleverSoft.png', 'CleverSCA', 'Gestion Corporativa Institucional', 'Conoce Más', '25rem', '14.5rem', '/landingCleversoft/soluciones/soluciones.php', 'SCA');
+    echo '
+    <div class="cards" style="background-image: url(' . $soluciones3->getImagen() . '); width:' . $soluciones3->getWidth() . '; height:' . $soluciones3->getHeight() . '">
+        <img src="' . $soluciones3->getLogo() . '"></img>    
+        <h2>' . $soluciones3->getTitulo() . '</h2>
+        <p>' . $soluciones3->getSubtitulo() . '</p>
+        <a href="' . $soluciones3->getEnlace() . '?tarjeta=' . $soluciones3->getIdentificador() . '"><button class="botonSoluciones">' . $soluciones3->getBoton() . '</button></a>
+    </div>';
+    $soluciones4 = new Cards('./imagenes/Soluciones/Card4.png', './imagenes/LogoCleverSoft.png', 'CleverCRM', 'Relaciones con los Clientes', 'Conoce Más', '24rem', '14.5rem', '/landingCleversoft/soluciones/soluciones.php', 'CRM');
+    echo '
+    <div class="cards" style="background-image: url(' . $soluciones4->getImagen() . '); width:' . $soluciones4->getWidth() . '; height:' . $soluciones4->getHeight() . '">
+        <img src="' . $soluciones4->getLogo() . '"></img>    
+        <h2>' . $soluciones4->getTitulo() . '</h2>
+        <p>' . $soluciones4->getSubtitulo() . '</p>
+        <a href="' . $soluciones4->getEnlace() . '?tarjeta=' . $soluciones4->getIdentificador() . '"><button class="botonSoluciones">' . $soluciones4->getBoton() . '</button></a>
+    </div>';
+    $soluciones5 = new Cards('./imagenes/Soluciones/Card5.png', './imagenes/LogoCleverSoft.png', '', '', 'Ver todo', '24rem', '14.5rem', '/landingCleversoft/soluciones/soluciones.php', 'TODOS');
+    echo '
+    <div class="cards" style="background-image: url(' . $soluciones5->getImagen() . '); width:' . $soluciones5->getWidth() . '; height:' . $soluciones5->getHeight() . '">
+        <img src="' . $soluciones5->getLogo() . '"></img>    
+        <h2>' . $soluciones5->getTitulo() . '</h2>
+        <p>' . $soluciones5->getSubtitulo() . '</p>
+        <a href="' . $soluciones5->getEnlace() . '?tarjeta=' . $soluciones5->getIdentificador() . '"><button class="botonSoluciones">' . $soluciones5->getBoton() . '</button></a>
+    </div>';
     echo '</div>';
+
     echo '</div>';
     echo '</section>';
 
@@ -53,14 +90,54 @@
 
     echo '<section class="contenedor-cards" id="servicios">';
     echo '<h1 class="tituloCards">SERVICIOS</h1>';
+
+    echo '<div class="wrapperCards">';
     echo '<div class="fila-superior">';
-    $soluciones = new Cards('./imagenes/Consultoria.jpg', './imagenes/LogoCleverSoft.png', 'Consultoría de Sistemas', '', 'Conoce Más', '38rem', '21rem',  '', '');
-    $soluciones = new Cards('./imagenes/Capacitacion.jpg', './imagenes/LogoCleverSoft.png', 'Implementación de Software', '', 'Conoce Más', '38rem', '21rem',  '', '');
+    $cards1 = new Cards('./imagenes/Consultoria.jpg', './imagenes/LogoCleverSoft.png', 'Consultoría de Sistemas', '', 'Conoce Más', '37.5rem', '19rem', '/landingCleversoft/servicios.php', 'Consultoria');
+    echo '
+      <div class="cards" style="background-image: url(' . $cards1->getImagen() . '); width:' . $cards1->getWidth() . '; height:' . $cards1->getHeight() . '">
+          <img src="' . $cards1->getLogo() . '"></img>    
+          <h2>' . $cards1->getTitulo() . '</h2>
+          <p>' . $cards1->getSubtitulo() . '</p>
+          <a href="' . $cards1->getEnlace() . '?tarjeta=' . $cards1->getIdentificador() . '"><button class="botonCards">' . $cards1->getBoton() . '</button></a>
+      </div>';
+    $cards2 = new Cards('./imagenes/Implementacion.jpg', './imagenes/LogoCleverSoft.png', 'Implementación de Software', '', 'Conoce Más', '37.5rem', '19rem', '/landingCleversoft/servicios.php', 'Implementacion');
+    echo '
+      <div class="cards" style="background-image: url(' . $cards2->getImagen() . '); width:' . $cards2->getWidth() . '; height:' . $cards2->getHeight() . '">
+          <img src="' . $cards2->getLogo() . '"></img>    
+          <h2>' . $cards2->getTitulo() . '</h2>
+          <p>' . $cards2->getSubtitulo() . '</p>
+          <a href="' . $cards2->getEnlace() . '?tarjeta=' . $cards2->getIdentificador() . '"><button class="botonCards">' . $cards2->getBoton() . '</button></a>
+      </div>';
     echo '</div>';
+
     echo '<div class="fila-inferior">';
-    $soluciones = new Cards('./imagenes/Tercearizacion.jpg', './imagenes/LogoCleverSoft.png', 'Tercerización del area de sistemas', '', 'Conoce Más', '25rem', '14rem',  '', '20%');
-    $soluciones = new Cards('./imagenes/Desarrollo.jpg', './imagenes/LogoCleverSoft.png',  'Desarrollo de Aplicaciones a Medida', '', 'Conoce Más', '25rem', '14rem',  '', '');
-    $soluciones = new Cards('./imagenes/Implementacion.jpg', './imagenes/LogoCleverSoft.png', 'Capacitación en Tecnologías de Información', '', 'Conoce Más', '25rem', '14rem',  '', '');
+    $cards3 = new Cards('./imagenes/Tercearizacion.jpg', './imagenes/LogoCleverSoft.png', 'Tercerización del área de sistemas', '', 'Conoce Más', '25rem', '14.5rem', '/landingCleversoft/servicios.php', 'Tercearizacion');
+    echo '
+      <div class="cards" style="background-image: url(' . $cards3->getImagen() . '); width:' . $cards3->getWidth() . '; height:' . $cards3->getHeight() . '">
+          <img src="' . $cards3->getLogo() . '"></img>    
+          <h2>' . $cards3->getTitulo() . '</h2>
+          <p>' . $cards3->getSubtitulo() . '</p>
+          <a href="' . $cards3->getEnlace() . '?tarjeta=' . $cards3->getIdentificador() . '"><button class="botonCards">' . $cards3->getBoton() . '</button></a>
+      </div>';
+    $cards4 = new Cards('./imagenes/Desarrollo.jpg', './imagenes/LogoCleverSoft.png', 'Desarrollo de Aplicaciones a Medida', '', 'Conoce Más', '24rem', '14.5rem', '/landingCleversoft/servicios.php', 'Desarrollo');
+    echo '
+      <div class="cards" style="background-image: url(' . $cards4->getImagen() . '); width:' . $cards4->getWidth() . '; height:' . $cards4->getHeight() . '">
+          <img src="' . $cards4->getLogo() . '"></img>    
+          <h2>' . $cards4->getTitulo() . '</h2>
+          <p>' . $cards4->getSubtitulo() . '</p>
+          <a href="' . $cards4->getEnlace() . '?tarjeta=' . $cards4->getIdentificador() . '"><button class="botonCards">' . $cards4->getBoton() . '</button></a>
+      </div>';
+    $cards5 = new Cards('./imagenes/VerTodos.jpg', './imagenes/LogoCleverSoft.png', 'Ver todos los servicios', '', 'Conoce Más', '24rem', '14.5rem', '/landingCleversoft/servicios.php', 'Todos');
+    echo '
+      <div class="cards" style="background-image: url(' . $cards5->getImagen() . '); width:' . $cards5->getWidth() . '; height:' . $cards5->getHeight() . '">
+          <img src="' . $cards5->getLogo() . '"></img>    
+          <h2>' . $cards5->getTitulo() . '</h2>
+          <p>' . $cards5->getSubtitulo() . '</p>
+          <a href="' . $cards5->getEnlace() . '?tarjeta=' . $cards5->getIdentificador() . '"><button class="botonCards">' . $cards5->getBoton() . '</button></a>
+      </div>';
+    echo '</div>';
+
     echo '</div>';
     echo '</section>';
 
@@ -83,7 +160,6 @@
 <script>
   const sections = document.querySelectorAll('section');
 
-  /* devuelve el índice de la sección correspondiente a la posición actual del desplazamiento */
   const getCurrentSectionIndex = () => {
     let index = 0;
     const offset = window.pageYOffset + window.innerHeight / 2;
@@ -95,7 +171,7 @@
     return index;
   };
 
-  /* actualiza la clase 'active' en los elementos del menú de navegación */
+
   const updateActiveClass = () => {
     const index = getCurrentSectionIndex();
     document.querySelectorAll('.navbarList a').forEach(link => {
@@ -104,7 +180,6 @@
     document.querySelectorAll('.navbarList a')[index].classList.add('active');
   };
 
-  /* actualiza la clase cada vez que se produce el evento 'scroll' */
   window.addEventListener('scroll', updateActiveClass);
   window.addEventListener('resize', updateActiveClass);
 </script>

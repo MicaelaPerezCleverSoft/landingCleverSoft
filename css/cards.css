@@ -1,91 +1,92 @@
 .tituloCards {
-    text-align: left;
-    margin-right: 66.5rem;
-    color: #ffffff;
-    padding: 1rem;
+  color: #2c2c2c;
+  padding: 1rem;
 
-    font-size: 1.5rem;
-    font-weight: 800;
+  font-size: 1.5rem;
+  font-weight: 800;
+
+  margin-left: 2rem;
 }
 
 .wrapperCards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-    z-index: 10000;
+  z-index: 10000;
 }
 
 .cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #FFFFFF;
-    border: 2px solid;
-    border-color: rgb(172, 172, 172);
-    border-radius: 0.3rem;
-    margin: 0 0.6rem;
-    position: relative;
-    background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  border-radius: 0.4rem;
+  margin: 0.2rem 0.6rem;
+  position: relative;
+  background-size: cover;
 }
 
 .cards img {
-    width: 3rem;
-    padding: 0 0 0.5rem 0;
+  width: 2.5rem;
+  padding: 0 0 1.5rem 0;
 }
 
 .cards h2 {
-    font-size: 1rem;
+  font-size: 1.3rem;
+  text-align: center;
 }
 
 .cards p {
-    font-size: 0.8rem;
+  font-size: 1rem;
+
+  font-family: "Noto Sans", sans-serif;
 }
 
 .cards h2,
 .cards p {
-    padding: 0 0 0.5rem 0;
+  padding: 0 0 0.5rem 0;
 }
 
 .cards button {
-    width: 7rem;
-    height: 2rem;
-    background: linear-gradient(to right, #295883, #152E45, #295883);
-    color: white;
+  width: 8rem;
+  height: 2rem;
+  background: linear-gradient(to right, #295883, #152e45, #295883);
+  color: white;
 
-    border-radius: 1rem;
-    border: none;
+  border-radius: 0.7rem;
+  border: none;
 
-    font-weight: bold;
+  font-weight: bold;
 
-    margin: 0.5rem 0 0 0;
-    cursor: pointer;
+  margin: 0.5rem 0 0 0;
+  cursor: pointer;
 }
 
 .contenedor-cards {
-    background-color: #212529;
-    padding-bottom: 2rem;
+  background-color: #f2f2f2f2;
+  padding-bottom: 2rem;
 }
 
 .fila-superior {
-    display: flex;
-    width: 100%;
-    justify-content: center;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 .fila-inferior {
-    display: flex;
-    width: 100%;
-    margin-top: 20px;
-    justify-content: center;
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  justify-content: center;
 }
 
 .soluciones {
-    width: 35%;
+  width: 35%;
 }
 
 .soluciones:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }

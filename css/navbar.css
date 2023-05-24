@@ -1,44 +1,49 @@
-*{
-    margin: 0rem;
-    padding: 0;
+* {
+  margin: 0rem;
+  padding: 0;
 }
 
-
 .navbarClever {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    background-color: #2C2C2C;
-    color: white;
+  background-color: white;
+  color: #2c2c2c;
 
-    font-size: 0.8rem;
-    font-weight: 800;
-    padding: 0.5rem;
-    
-    position: fixed; 
-    top: 0; 
-    width: 100%; 
+  font-size: 0.8rem;
+  font-weight: 800;
+  padding: 0.5rem;
 
-    z-index: 500;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  z-index: 500;
+
+  font-family: "Noto Sans", sans-serif;
+  opacity: 0.9;
 }
 
 .navbarList {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 
-    list-style: none !important;
-    margin-bottom: 0;
-    margin-right: 1rem;
+  list-style: none !important;
+  margin-bottom: 0;
+  margin-right: 1rem;
 }
-
 
 .navbarList li {
-    margin: 0rem 0.8rem;
-    cursor: pointer;
+  margin: 0rem 0.8rem;
+  cursor: pointer;
 }
 
-.active, 
-.active:hover{
-    color: #18ACCA;
+.active,
+.active:hover {
+  color: #18acca;
+}
+
+a {
+  color: #2c2c2c;
 }

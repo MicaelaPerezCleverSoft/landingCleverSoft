@@ -4,6 +4,7 @@
 
     display: flex;
     justify-content: space-around;
+    align-items: center;
 
     padding: 2rem 4rem;
 }
@@ -40,14 +41,14 @@
 }
 
 .nosotrosPoliticaDeCalidad {
-    width: 150%;
-    height: fit-content;
-    display: inline-flex;
+    width: 200%;
+    height: auto;
+    display: flex;
     flex-direction: column;
 
     background-color: #375964;
 
-    margin: 0.5rem 2.5rem 0 0;
+    margin: 6rem 2.5rem 0 0;
 }
 
 .nosotrosPoliticaDeCalidad ul {
